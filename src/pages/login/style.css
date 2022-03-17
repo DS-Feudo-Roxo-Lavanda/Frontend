@@ -19,7 +19,7 @@
 .action-wrapper{
     display: flex;
     flex-direction: column;
-    height: 350px; 
+    height: 280px; 
     justify-content: space-between;
 }
 .title-login{
@@ -33,6 +33,13 @@
     border-radius: 15px;
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.first-input{
+    margin-bottom: 10px;
 }
 .input-action::placeholder{
     color:white;
@@ -48,6 +55,7 @@
     color: white;
     font-size: 15px;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 .sign-action{
     color: white;
