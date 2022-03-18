@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 70%;
 }
 
 .action-wrapper {
@@ -31,3 +31,42 @@
     color: white;
     align-self: center;
 }
+
+.input-action {
+    height: 45px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-action {
+    height: 45px;
+    width: 300px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    cursor: pointer;
+}
+
+.login-action {
+    color: white;
+    text-align: center;
+}
+
+.link-action {
+    color: #8E05C2;
+    cursor: pointer;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.first-input {
+    margin-bottom: 10px;
+}
+

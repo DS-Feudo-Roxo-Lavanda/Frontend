@@ -3,7 +3,12 @@ import style from './style.css';
 import { Link } from "react-router-dom";
 import logo from "../../assets/image/logo.png"
 
+
 export default function Cadastro() {
+    function handleClick() {
+        console.log("Criou!")
+    }
+
     return(
         <div className="Cadastro">
             <div className="logo-wrapper">
@@ -12,10 +17,15 @@ export default function Cadastro() {
             <div className="input-wrapper">
                 <div className="action-wrapper">
                     <p className="title-signup">Crie sua conta.</p>
-                    <input placeholder="Usuário" />
-                    <input placeholder="Email" />
-                    <input placeholder="Senha" type="password" />
-                    <button />
+                    <div className="inputs">
+                        <input placeholder="Usuário" className="input-action first-input" />
+                        <input placeholder="Email" className="input-action first-input" />
+                        <input placeholder="Senha" type="password" className="input-action" />
+                    </div>
+                    <div className="button-link">
+                        <button className="button-action" onClick={() => handleClick()}>Criar</button>
+                        <p className="login-action">Ja possui uma conta? <Link to="/" className="link-action">Entrar.</Link></p>
+                    </div>
                 </div>
             </div>
         </div>
