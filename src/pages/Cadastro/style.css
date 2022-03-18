@@ -1,0 +1,33 @@
+.Cadastro {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/image/backgroundLogin.png");
+}
+
+.logo {
+    width: 60px;
+    height: 60px;    
+}
+
+.logo-wrapper {
+    padding: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.action-wrapper {
+    display: flex;
+    flex-direction: column;   
+    height: 280px;
+}
+
+.title-signup {
+    font-size: 45px;
+    color: white;
+    align-self: center;
+}
