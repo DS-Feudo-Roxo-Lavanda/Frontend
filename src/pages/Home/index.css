@@ -4,11 +4,15 @@
 }
 .home-header{
     height: 60px;
-    background-color: rgb(18, 18, 18);
+    background-color: #202020;
 }
 .logo-header{
     height: 45px;
     width: 45px;
     margin-left: 20px;
     margin-top:5px
+}
+.home-wrapper{
+    background-color: #181818;
+    height: 100%;
 }

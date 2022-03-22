@@ -9,6 +9,8 @@ export default function Home() {
             <div className="home-header">
                 <img src={logo} className='logo-header'></img>
             </div>
+            <div className="home-wrapper">     
+            </div>
         </div>
     )
 }
