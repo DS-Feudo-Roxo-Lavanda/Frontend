@@ -10,13 +10,13 @@ export default function Cadastro() {
     }
 
     return(
-        <div className="Cadastro">
+        <div className="login-cadastro">
             <div className="logo-wrapper">
                 <img src={logo} className="logo"></img>
             </div>
             <div className="input-wrapper">
                 <div className="action-wrapper">
-                    <p className="title-signup">Crie sua conta.</p>
+                    <p className="title-login">Crie sua conta.</p>
                     <div className="inputs">
                         <input placeholder="Usuário" className="input-action first-input" />
                         <input placeholder="Email" className="input-action first-input" />
