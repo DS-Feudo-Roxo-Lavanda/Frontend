@@ -1,5 +1,4 @@
 import React from "react";
-import './style.css'
 import logo from '../../assets/image/logo.png'
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ export default function Login() {
     function handleClick(){
         console.log('Logou!')
     }
-
+    
     return (
         <div className='login-cadastro'>
             <div className='logo-wrapper'>
