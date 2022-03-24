@@ -19,9 +19,9 @@
     margin-top:10px
 }
 .home-wrapper{
-    height: 100%;
+    background-color: #202020;
     display: flex;
-
+    flex-direction: column;
 }
 .caurosel{
     height: 330px;
