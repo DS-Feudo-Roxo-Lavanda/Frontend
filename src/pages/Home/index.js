@@ -4,6 +4,7 @@ import logo from "../../assets/image/logo.png"
 import Navbar from "../../components/Navbar";
 
 
+
 export default function Home() {
 
     return(
@@ -12,7 +13,12 @@ export default function Home() {
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
             </div>
-            <div className="home-wrapper">     
+            <div className="home-wrapper">  
+                <div className='caurosel'>
+                    <div className="show" >
+                        <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/cKNxg77ll8caX3LulREep4C24Vx.jpg" className="image"></img>            
+                    </div>
+                </div>   
             </div>
         </div>
     )
