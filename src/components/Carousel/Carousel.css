@@ -23,5 +23,6 @@
     position: relative;
 }
 .show:hover{
-    
+    transform: scale(1.20,1.20);
+    transition: 750ms;
 }
