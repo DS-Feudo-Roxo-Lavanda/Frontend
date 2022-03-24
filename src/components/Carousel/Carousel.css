@@ -1,0 +1,27 @@
+.caurosel{
+    margin-top: 150px;
+    margin-left:70px;
+    display: flex;
+    align-items: center;
+}
+.show{
+    cursor: pointer;
+}
+.image{
+    border-radius: 15px;
+}
+.title{
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    bottom: 25px;
+    left: 10px;
+}
+.img-title{
+    display: inline-block;
+    position: relative;
+}
+.show:hover{
+    
+}

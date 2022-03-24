@@ -18,6 +18,11 @@ export default function Home() {
             <div className="home-wrapper">  
                  <Carousel/>
                  <Carousel/>
+                 <Carousel/>
+                 <Carousel/>
+                 <Carousel/>
+                 <Carousel/>
+                 <Carousel/>
             </div>
         </div>
     )
