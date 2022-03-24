@@ -22,7 +22,7 @@ export default function Cadastro() {
                     </div>
                     <div className="button-link">
                         <button className="button-action" onClick={() => handleClick()}>Criar</button>
-                        <p className="login-action">Ja possui uma conta? <Link to="/" className="link-action">Entrar.</Link></p>
+                        <p className="login-action">Já possui uma conta? <Link to="/" className="link-action">Entrar</Link></p>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ export default function Login() {
                         <input type='password' placeholder="Senha" className='input-action' />
                     </div>
                     <div className button-link>
-                        <button className='button-action' onClick={() => handleClick()}>Entre</button>
+                        <Link to='/Home'><button className='button-action' onClick={() => handleClick()}>Entre</button></Link>
                         <p className="login-action">Não tem uma conta? <Link to='/cadastro' className="link-action">Cadastre-se</Link></p>
                     </div> 
                 </div>

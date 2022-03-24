@@ -39,10 +39,13 @@
     border-radius: 12px;
     border: none;
     background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+    padding-left: 10px;
+    font-size: 15px;
+    
 }
 .input-action::placeholder{
     color:white;
-    padding-left: 10px;
     font-size: 15px;
 }
 .button-action{
@@ -78,4 +81,5 @@
     flex-direction: column;   
     height: 280px;
     margin-bottom: 50px;
+    align-items: center;
 }

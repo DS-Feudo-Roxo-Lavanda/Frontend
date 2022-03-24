@@ -12,6 +12,7 @@ export default function Home() {
             <div className="home-header">
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
+                <input className="search" placeholder="Pesquisar"/>
             </div>
             <div className="home-wrapper">  
                 <div className='caurosel'>
