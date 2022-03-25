@@ -1,8 +1,9 @@
 .carousel{
-    margin-top: 150px;
+    margin-top: 60px;
     margin-left:70px;
     display: flex;
     align-items: center;
+    max-width: 400px;
 }
 .show{
     overflow: hidden;
@@ -40,6 +41,7 @@
     padding-left: 13px;
     padding-bottom: 18px;
     /*background-image: linear-gradient(To top, rgba(0,0,0,1), rgba(0,0,0, .7), rgba(0,0,0,0));*/
-    background-image: linear-gradient(to top, black, transparent);
+    /*background-image: linear-gradient(to top, black, transparent);*/
 }
+
 
