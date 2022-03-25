@@ -45,6 +45,14 @@
 }
 .nav-text a:hover{
     background-color: #3E065F;
+    transition: 335ms;
+}
+.exit a{
+    margin-top: 930px;
+}
+.exit a:hover{
+    background-color: rgba(236, 11, 11, 0.7);
+    transition: 320ms;
 }
 .nav-menu-itens{
     width: 100%;

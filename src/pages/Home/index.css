@@ -38,9 +38,9 @@
     top: 10px;
     border: none;
 }
-.home_carousel{
-    align-self: center;
-    justify-content: space-between;
+.carousel-wrapper{
+    display: flex;
+    justify-content: center;
 }
 .gen-tittle{
     color: white;

@@ -3,6 +3,7 @@ import { icons } from "react-icons";
 import { FaBars } from "react-icons/fa"
 import { AiOutlineHome } from "react-icons/ai"
 import { BiBookBookmark } from "react-icons/bi"
+import { BiExit } from "react-icons/bi"
 import './Navbar.css'
 
 export const SidebarData = [
@@ -17,5 +18,11 @@ export const SidebarData = [
         path: '/MeusShows',
         icon: <BiBookBookmark/>,
         cName: 'nav-text' 
+    },
+    {
+        title: 'Sair',
+        path: '/',
+        icon: <BiExit/>,
+        cName: 'nav-text exit'
     }
 ]
