@@ -40,7 +40,6 @@
 }
 .carousel-wrapper{
     display: flex;
-    justify-content: center;
 }
 .gen-tittle{
     color: white;

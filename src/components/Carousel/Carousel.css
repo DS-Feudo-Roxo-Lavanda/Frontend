@@ -1,17 +1,24 @@
+.container{
+    max-width: 75vh;
+}
+
 .carousel{
     display: flex;
     scroll-behavior: smooth;
-
-    margin-top: 60px;
-    margin-left:70px;
     align-items: center;
-    max-width: 400px;
+    max-width: 75vh;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 50px;
 }
 .show{
+    flex: none;
     overflow: hidden;
     cursor: pointer;
     position: relative;
     border-radius: 16px;
+    padding-right: 11px;
+    padding-left: 11px;
 }
 .image{
     border-radius: 16px;
@@ -32,7 +39,7 @@
     width: 220;
 }
 .show:hover{
-    transform: scale(1.20,1.20);
+    transform: scale(1.18,1.18);
     transition: 750ms;
 }
 .tittle-wrapper{
