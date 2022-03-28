@@ -1,5 +1,5 @@
 .container{
-   
+   max-width: 97.5%;
 }
 
 .carousel{
@@ -10,7 +10,7 @@
     height: 470px;
     margin-bottom: 50px;
     padding-top: 50px;
-    justify-items:flex-start;
+    padding-left: 25px;
 }
 .show{
     flex: none;
@@ -18,7 +18,7 @@
     cursor: pointer;
     position: relative;
     border-radius: 16px;
-    padding: 0 0 0 20px;
+    padding: 12px;
 }
 .image{
     border-radius: 16px;
