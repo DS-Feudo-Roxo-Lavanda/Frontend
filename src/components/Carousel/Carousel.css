@@ -1,7 +1,9 @@
 .carousel{
+    display: flex;
+    scroll-behavior: smooth;
+
     margin-top: 60px;
     margin-left:70px;
-    display: flex;
     align-items: center;
     max-width: 400px;
 }
@@ -9,10 +11,10 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .image{
-    border-radius: 15px;
+    border-radius: 16px;
     height: 100%;
 }
 .tittle{
