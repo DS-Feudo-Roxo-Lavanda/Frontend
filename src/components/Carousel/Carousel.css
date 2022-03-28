@@ -1,15 +1,16 @@
 .container{
-    max-width: 75vh;
+   
 }
 
 .carousel{
+    overflow-x: auto;
     display: flex;
     scroll-behavior: smooth;
     align-items: center;
-    max-width: 75vh;
+    height: 470px;
     margin-bottom: 50px;
-    padding-left: 20px;
     padding-top: 50px;
+    justify-items:flex-start;
 }
 .show{
     flex: none;
@@ -17,8 +18,7 @@
     cursor: pointer;
     position: relative;
     border-radius: 16px;
-    padding-right: 11px;
-    padding-left: 11px;
+    padding: 0 0 0 20px;
 }
 .image{
     border-radius: 16px;
