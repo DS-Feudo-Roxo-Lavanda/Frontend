@@ -1,14 +1,13 @@
 .container{
    max-width: 97.5%;
 }
-
 .carousel{
     overflow-x: auto;
     display: flex;
     scroll-behavior: smooth;
     align-items: center;
     height: 470px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding-top: 50px;
     padding-left: 25px;
 }
@@ -51,6 +50,19 @@
     padding-bottom: 18px;
     /*background-image: linear-gradient(To top, rgba(0,0,0,1), rgba(0,0,0, .7), rgba(0,0,0,0));*/
     /*background-image: linear-gradient(to top, black, transparent);*/
+}
+.buttons-wrapper{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.slider-arrow{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.first-arrow{
+    transform: scaleX(-1);
 }
 
 
