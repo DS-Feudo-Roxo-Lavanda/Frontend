@@ -22,7 +22,7 @@ export default function Home() {
                     </div>
                 <h2 className="gen-tittle">Animações</h2>
                     <div className="carousel-wrapper">
-                        <Carousel className="home_carousel"/>
+                        <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/16/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
                     </div>
                 <h2 className="gen-tittle">Ação e Aventura</h2>
                     <div className="carousel-wrapper">
@@ -38,7 +38,7 @@ export default function Home() {
                     </div>
                 <h2 className="gen-tittle">Terror</h2>
                     <div className="carousel-wrapper">
-                        <Carousel className="home_carousel"/>
+                        <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/28/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
                     </div>
                     
             </div>

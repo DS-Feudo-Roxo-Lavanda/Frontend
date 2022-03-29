@@ -3,19 +3,22 @@ import React, { useEffect, useState, useRef } from 'react'
 import "./Carousel.css"
 import sliderArrow from "../../assets/image/sliderArrow.png"
 
-export default function Carousel(){
+export default function Carousel(props){
    
     const[data, setData] = useState([]);
     const carousel = useRef(null);
     useEffect(() => {
-        fetch('https://fakerestapi.azurewebsites.net/api/v1/CoverPhotos')
+        fetch(props.url)
             .then((Response) => Response.json())
-            .then(setData);
+            .then((Response) => {
+                console.log(Response.results)
+                setData(Response.results)
+            });
     }, []);
 
     const handleRightClick = (e) => {
         e.preventDefault();
-        carousel.current.scrollRight += carousel.current.offsetWidth;
+        carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
 
     const handleLeftClick = (e) => {
@@ -28,12 +31,12 @@ export default function Carousel(){
         <div className='container'>
              <div className='carousel' ref={carousel}>
             {data.map((show) => {
-                const {id, url} = show;
+                const {id, title, poster_path } = show;
                 return(
                     <div className="show" key={id} >
-                        <img src='https://www.themoviedb.org/t/p/w220_and_h330_face/cKNxg77ll8caX3LulREep4C24Vx.jpg' className="image" ></img>    
+                        <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + poster_path} className="image" ></img>    
                         <div className='tittle-wrapper' >
-                            <span className="tittle">{id}</span>
+                            <span className="tittle">{title}</span>
                         </div>
                     </div>
                 );

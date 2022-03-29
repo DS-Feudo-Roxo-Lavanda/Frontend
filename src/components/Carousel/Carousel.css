@@ -2,7 +2,8 @@
    max-width: 97.5%;
 }
 .carousel{
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     scroll-behavior: smooth;
     align-items: center;
@@ -52,7 +53,7 @@
     /*background-image: linear-gradient(to top, black, transparent);*/
 }
 .buttons-wrapper{
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     display: flex;
 }
