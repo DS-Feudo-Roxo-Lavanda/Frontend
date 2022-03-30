@@ -2,6 +2,7 @@
     width:99.5% ;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 .carousel{
     overflow-x: hidden;
@@ -9,9 +10,7 @@
     display: flex;
     scroll-behavior: smooth;
     align-items: center;
-    height: 470px;
-    margin-bottom: 10px;
-    padding-top: 50px;
+    height: 400px;
     padding-left: 13px;
 }
 .show{
