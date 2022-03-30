@@ -29,7 +29,8 @@ export default function Carousel(props){
 
     return(
         <div className='container'>
-             <div className='carousel' ref={carousel}>
+            <button className="slider-arrow first-arrow" onClick={handleLeftClick}><img src={sliderArrow} alt='Scroll Left'></img></button>
+            <div className='carousel' ref={carousel}>
             {data.map((show) => {
                 const {id, title, poster_path } = show;
                 return(
@@ -42,11 +43,7 @@ export default function Carousel(props){
                 );
             })}
             </div>
-            <div className='buttons-wrapper'>
-                <button className="slider-arrow first-arrow" onClick={handleLeftClick}><img src={sliderArrow} alt='Scroll Left'></img></button>
-                <button className="slider-arrow" onClick={handleRightClick}><img src={sliderArrow} alt='Scroll Right'></img></button>
-            </div>
-            
+            <button className="slider-arrow second-arrow " onClick={handleRightClick}><img src={sliderArrow} alt='Scroll Right'></img></button> 
         </div>
     )
 }

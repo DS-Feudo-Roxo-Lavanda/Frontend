@@ -1,5 +1,7 @@
 .container{
-   max-width: 97.5%;
+    width:99.5% ;
+    display: flex;
+    justify-content: space-between;
 }
 .carousel{
     overflow-x: hidden;
@@ -10,15 +12,16 @@
     height: 470px;
     margin-bottom: 10px;
     padding-top: 50px;
-    padding-left: 25px;
+    padding-left: 13px;
 }
 .show{
     flex: none;
     overflow: hidden;
     cursor: pointer;
-    position: relative;
+    position: relative ;
     border-radius: 16px;
-    padding: 12px;
+    padding: 3px;
+    
 }
 .image{
     border-radius: 16px;
@@ -39,7 +42,7 @@
     width: 220;
 }
 .show:hover{
-    transform: scale(1.18,1.18);
+    transform: scale(1.16,1.16);
     transition: 750ms;
 }
 .tittle-wrapper{
@@ -60,10 +63,20 @@
 .slider-arrow{
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: pointer; 
+    right: 0px;
 }
+
 .first-arrow{
     transform: scaleX(-1);
+    margin-left: 8px;
+    margin-right: 5px;
 }
+.second-arrow{
+    width: 100px;
+    padding-left: 10px;
+
+}
+
 
 
