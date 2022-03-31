@@ -17,32 +17,40 @@ export default function Home() {
             </div>
             <div className="home-wrapper">
                 <div className="top10-wrapper" >
-                    <CarouselTop10 url='https://api.themoviedb.org/3/movie/152/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                    <CarouselTop10 url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate'/>
                 </div>
                 <div className='gen-recommendations'>
-                    <h2 className="gen-tittle">Lançamentos</h2>
+                    <h2 className="gen-tittle">Séries</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/11/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/tv?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&without_genres=28&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0'/>
                         </div>
                     <h2 className="gen-tittle">Animações</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/12/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=16&with_watch_monetization_types=flatrate'/>
                         </div>
-                    <h2 className="gen-tittle">Ação e Aventura</h2>
+                        <h2 className="gen-tittle">Ação</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/18/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate'/>
+                        </div>
+                    <h2 className="gen-tittle">Aventura</h2>
+                        <div className="carousel-wrapper">
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=12&with_watch_monetization_types=flatrate'/>
                         </div>
                     <h2 className="gen-tittle">Comédia</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/14/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=35&with_watch_monetization_types=flatrate'/>
                         </div>
                     <h2 className="gen-tittle">Drama</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/20/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=18&with_watch_monetization_types=flatrate'/>
+                        </div>
+                    <h2 className="gen-tittle">Ficção Científica</h2>
+                        <div className="carousel-wrapper">
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=878&with_watch_monetization_types=flatrate'/>
                         </div>
                     <h2 className="gen-tittle">Terror</h2>
                         <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/movie/27/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=27&with_watch_monetization_types=flatrate'/>
                         </div>
                 </div>  
             </div>

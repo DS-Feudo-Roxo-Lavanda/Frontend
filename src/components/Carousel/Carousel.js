@@ -37,7 +37,7 @@ export default function Carousel(props){
                     <div className="show" key={id} >
                         <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + poster_path} className="image" ></img>    
                         <div className='tittle-wrapper' >
-                            <span className="tittle">{title}</span>
+                            {/*<span className="tittle">{title}</span>*/}
                         </div>
                     </div>
                 );
