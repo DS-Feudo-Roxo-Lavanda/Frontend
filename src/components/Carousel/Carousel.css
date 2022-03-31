@@ -4,6 +4,19 @@
     justify-content: space-between;
     margin-bottom: 30px;
 }
+.container .top10-carousel{
+    max-width: 99.9%;
+}
+.top10-carousel{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+    align-items: center;
+    height: 465px;
+    margin-top: 70px;
+    padding-left: 12.5px;
+}
 .carousel{
     overflow-x: hidden;
     overflow-y: hidden;
@@ -13,6 +26,16 @@
     height: 400px;
     padding-left: 13px;
 }
+.top10-show{
+    height: 400px;
+    width: 267px;
+    flex: none;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative ;
+    border-radius: 16px;
+    margin: 5.6px;
+}
 .show{
     flex: none;
     overflow: hidden;
@@ -20,7 +43,6 @@
     position: relative ;
     border-radius: 16px;
     padding: 3px;
-    
 }
 .image{
     border-radius: 16px;
@@ -39,6 +61,10 @@
     position: relative;
     height: 330;
     width: 220;
+}
+.top10-show:hover{
+    transform: scale(1.09,1.09);
+    transition: 750ms
 }
 .show:hover{
     transform: scale(1.16,1.16);
@@ -74,7 +100,6 @@
 .second-arrow{
     width: 100px;
     padding-left: 10px;
-
 }
 
 

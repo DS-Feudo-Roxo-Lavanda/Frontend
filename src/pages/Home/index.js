@@ -2,8 +2,8 @@ import react from "react";
 import styles from './index.css'
 import logo from "../../assets/image/logo.png"
 import Navbar from "../../components/Sidebar/Navbar";
+import CarouselTop10 from "../../components/Carousel/CarouselTop10";
 import Carousel from "../../components/Carousel/Carousel";
-
 
 
 export default function Home() {
@@ -16,6 +16,9 @@ export default function Home() {
                 <input className="search" placeholder="Pesquisar"/>
             </div>
             <div className="home-wrapper">
+                <div className="top10-wrapper" >
+                    <CarouselTop10 url='https://api.themoviedb.org/3/movie/152/recommendations?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&page=1'/>
+                </div>
                 <div className='gen-recommendations'>
                     <h2 className="gen-tittle">Lançamentos</h2>
                         <div className="carousel-wrapper">

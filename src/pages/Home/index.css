@@ -44,10 +44,10 @@
     top: 10px;
     border: none;
 }
-.gen-recommendations{
-    padding-top: 70px;
-}
 .gen-tittle{
     color: white;
     margin-left: 50px;
+}
+.first-gen{
+    padding-top: 85px;
 }
