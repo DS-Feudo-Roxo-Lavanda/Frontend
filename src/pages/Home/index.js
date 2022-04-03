@@ -14,9 +14,10 @@ export default function Home() {
             <div className="home-header">
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
-                <Search/>
+                <Search/> 
             </div>
             <div className="home-wrapper">
+                
                 <div className="top10-wrapper" >
                     <CarouselTop10 url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate'/>
                 </div>
