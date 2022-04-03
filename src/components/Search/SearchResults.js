@@ -1,15 +1,17 @@
-const SearchResults = () => {
+const SearchResults = ({results}) => {
+
+    if (!results || !results.length) return null
+
+    const showList = results.map(({id, title}) => {
+        return(
+        <li key={id}>{title}</li>
+        )
+    })
+
     return(
         <div className='search-results'>
-                    <ul>
-                        <li>Filme 1</li>
-                        <li>Filme 2</li>
-                        <li>Filme 3</li>
-                        <li>Filme 4</li>
-                        <li>Filme 5</li>
-                    </ul>
-                </div>
+            <ul>{showList}</ul>
+        </div>
     )
 }
-
 export default SearchResults

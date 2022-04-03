@@ -8,8 +8,7 @@ import SearchResults from "./SearchResults";
 
 export default function Search(){
 
-    const [results, setResults] = useState([]);
-
+    const [results, setResults] = useState([])
     const handleInputChange = (e) => {
         e.preventDefault();
         const { value } = e.target;
@@ -21,13 +20,16 @@ export default function Search(){
         .then((response) => response.json())
         .then(({results}) => setResults(results))
     }
+
     console.log(results)
+
     return(
         <div className='container'>
             <div className='search-wrapper'>
                 <input className="search" placeholder="Pesquisar" onChange={handleInputChange}/> 
-                <SearchResults/>
+                <SearchResults results={results}/>
             </div>
+           
         </div>
     )
 }
