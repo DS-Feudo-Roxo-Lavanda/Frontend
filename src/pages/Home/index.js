@@ -4,6 +4,7 @@ import logo from "../../assets/image/logo.png"
 import Navbar from "../../components/Sidebar/Navbar";
 import CarouselTop10 from "../../components/Carousel/CarouselTop10";
 import Carousel from "../../components/Carousel/Carousel";
+import Search from "../../components/Search/Search";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
             <div className="home-header">
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
-                <input className="search" placeholder="Pesquisar"/>
+                <Search/>
             </div>
             <div className="home-wrapper">
                 <div className="top10-wrapper" >
