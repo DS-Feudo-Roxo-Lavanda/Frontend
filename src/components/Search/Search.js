@@ -8,9 +8,11 @@ export default function Search(){
                 <input className="search" placeholder="Pesquisar"/>
                 <div className='search-results'>
                     <ul>
-                        <li>Flime 1</li>
-                        <li>Flime 2</li>
-                        <li>Flime 3</li>
+                        <li>Filme 1</li>
+                        <li>Filme 2</li>
+                        <li>Filme 3</li>
+                        <li>Filme 4</li>
+                        <li>Filme 5</li>
                     </ul>
                 </div>
             </div>
