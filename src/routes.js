@@ -7,6 +7,9 @@ import {
 import Login from "./pages/login"
 import Cadastro from "./pages/Cadastro"
 import Home from "./pages/Home";
+import Filmes from "./pages/MeusShows/Filmes";
+import Series from "./pages/MeusShows/Series";
+import Favoritos from "./pages/MeusShows/Favoritos";
 
 export default function AppRoutes() {
     return (
@@ -15,6 +18,9 @@ export default function AppRoutes() {
             <Route exact path="/" element={<Login></Login>}/>
             <Route path="/Cadastro" element={<Cadastro></Cadastro>}/>
             <Route path="/Home" element={<Home></Home>}/>
+            <Route path="/MeusShows/Filmes" element={<Filmes></Filmes>}/>
+            <Route path="/MeusShows/Series" element={<Series></Series>}/>
+            <Route path="/MeusShows/Favoritos" element={<Favoritos></Favoritos>}/>
           </Routes>
       </Router>
     );
