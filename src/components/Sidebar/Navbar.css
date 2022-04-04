@@ -47,8 +47,20 @@
     background-color: #3E065F;
     transition: 335ms;
 }
+.my-shows{
+    padding:  8px 0px 0px 16px;
+}
+.my-movies{
+    margin-top: 10px;
+}
+.line a{
+    color: white;
+    font-size: 8px;
+    cursor: default;
+    padding: 10px;
+}
 .exit a{
-    margin-top: 930px;
+    margin-top: 570px;
 }
 .exit a:hover{
     background-color: rgba(236, 11, 11, 0.7);
@@ -65,6 +77,9 @@
     align-items: center;
 }
 span{
-    margin-left: 16px;
+        margin-left: 16px;
 }
-
+.hello_user{
+    color: white;
+    padding: 17px 0px 0px 30px;
+}

@@ -44,6 +44,7 @@
 .list{
     display: flex;
     list-style: none;
+    margin-top: 100px;
 }
 
 .shows-nav-text{  

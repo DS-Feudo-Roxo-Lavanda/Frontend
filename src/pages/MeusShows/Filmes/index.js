@@ -14,9 +14,9 @@ export default function Filmes() {
             <div className="shows-header">
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
-                <ShowsNavBar />
                 <Search/> 
             </div>
+            <ShowsNavBar />
             <div className="shows-wrapper">
                 
                 <div className='gen-recommendations'>
