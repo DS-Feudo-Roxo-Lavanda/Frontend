@@ -15,7 +15,7 @@ export const SidebarData = [
     },
     {
         title: 'Meus Shows',
-        path: '/MeusShows',
+        path: '/MeusShows/Filmes',
         icon: <BiBookBookmark/>,
         cName: 'nav-text' 
     },
