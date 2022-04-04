@@ -4,7 +4,7 @@ import logo from "../../../assets/image/logo.png"
 import Navbar from "../../../components/Sidebar/Navbar";
 import Carousel from "../../../components/Carousel/Carousel";
 import Search from "../../../components/Search/Search";
-import ShowsNavBar from "../ShowsNavBar";
+import Showsbar from "../../../components/Showsbar/Showsbar";
 
 
 export default function Filmes() {
@@ -16,9 +16,8 @@ export default function Filmes() {
                 <img src={logo} className='logo-header'></img>
                 <Search/> 
             </div>
-            <ShowsNavBar />
             <div className="shows-wrapper">
-                
+                <Showsbar />
                 <div className='gen-recommendations'>
                     <h2 className="gen-tittle">Filmes já assistidos</h2>
                         <div className="carousel-wrapper">

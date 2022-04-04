@@ -4,7 +4,7 @@ import logo from "../../../assets/image/logo.png"
 import Navbar from "../../../components/Sidebar/Navbar";
 import Carousel from "../../../components/Carousel/Carousel";
 import Search from "../../../components/Search/Search";
-import ShowsNavBar from "../ShowsNavBar";
+import Showsbar from "../../../components/Showsbar/Showsbar";
 
 
 export default function Favoritos() {
@@ -14,10 +14,10 @@ export default function Favoritos() {
             <div className="shows-header">
                 <Navbar/>
                 <img src={logo} className='logo-header'></img>
-                <ShowsNavBar />
                 <Search/> 
             </div>
             <div className="shows-wrapper">   
+                <Showsbar />
                 <div className='gen-recommendations'>
                     <h2 className="gen-tittle">Séries favoritas</h2>
                         <div className="carousel-wrapper">
