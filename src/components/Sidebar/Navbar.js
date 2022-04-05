@@ -21,7 +21,6 @@ export default function Navbar(){
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                     
                     <ul className='nav-menu-itens' onClick={showSidebar}>
-                        <li><h3 className="hello_user">Olá, usuário.</h3></li>
                         <li className='navbar-toggle'>
                         </li>
                         {SidebarData.map((item, index) => {

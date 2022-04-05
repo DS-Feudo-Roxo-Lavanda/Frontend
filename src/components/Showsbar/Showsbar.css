@@ -1,16 +1,29 @@
-.list{
-    display: flex;
-    list-style: none;
-    margin-top: 100px;
-}
-.shows-tabs{  
+
+.show-tabs{  
     margin-bottom: 30px;
+    height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 20px 10px 20px;
 }
-.movie-tab{
-   padding: 0px 40px 0px 40px;
+.show-button{
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: #202020;
+    height: 60px;
+    padding: 0px 200px 0px 200px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+.show-button:hover{
+    background-color: #3E065F;
+    margin-bottom: 15px;
+    transition: 350ms;
 }
 .shows-nav-text a{
     text-decoration: none;
