@@ -3,6 +3,11 @@ const SearchResults = ({results}) => {
     if (!results || !results.length) return null
 
     const showList = results.map(({id, title}) => {
+
+        if (!title) {
+            return;
+        }
+
         return(
         <li key={id}>{title}</li>
         )
