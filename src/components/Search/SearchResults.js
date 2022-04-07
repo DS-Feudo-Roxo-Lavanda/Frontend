@@ -1,4 +1,11 @@
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom"
+
+
 const SearchResults = ({results}) => {
+
+    const navigate = useNavigate()
+    
 
     if (!results || !results.length) return null
 
@@ -9,7 +16,7 @@ const SearchResults = ({results}) => {
         }
 
         return(
-        <li key={id}>{title}</li>
+        <li key={id} onClick={() => navigate()}>{title}</li>
         )
     })
 
