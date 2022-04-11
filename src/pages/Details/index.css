@@ -18,8 +18,6 @@
     background-color: rgba(18, 18, 18, 0.7) ;
     position: absolute;
     padding:30px;
-    align-items: center;
-    justify-content: center;
     display: flex;
     width: 1000px;
     height: 400px;
@@ -27,14 +25,28 @@
     margin: 12% 0 0 18%
 }
 .poster{
-    padding-right: 10px;
-    height: 350px;
+    padding-right: 25px;
+    height: 340px;
 }
-.poster:hover{
-    cursor: pointer;
-    transition: 500ms;
+.action-buttons{
+  display: inline-flex;
 }
-.show-title{
+button{
+    width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background-color: #181818;
+	background-image: linear-gradient(315deg, #181818 0%, #b58ecc 74%);
+	border-radius: 50%;
+    margin-right: 40px;
+}
+
+.text{
     color: white;
-    padding: 20px;
+    padding-bottom: 20px;
+}
+.vote-data{
+    position: absolute;
+    text-align: left;
+    bottom: 12px;
 }
