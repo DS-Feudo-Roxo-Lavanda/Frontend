@@ -36,10 +36,10 @@ export default function Details(){
                             <p className='text'>Data de lançamento: {location.state.date}</p>
                         </div>
                         <div className='action-buttons'>
-                            <button>B1</button>
-                            <button>B2</button>
-                            <button>B3</button>
-                            <button>B4</button>
+                            <button className='details-button'>B1</button>
+                            <button className='details-button'>B2</button>
+                            <button className='details-button'>B3</button>
+                            <button className='details-button'>B4</button>
                         </div>
                     </div>
                 </div>

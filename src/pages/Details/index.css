@@ -39,7 +39,7 @@
     text-align: left;
     bottom: 15px;
 }
-button{
+.details-button{
     color: white;
     width: 40px;
 	height: 40px;
@@ -50,7 +50,7 @@ button{
     margin-right: 50px;
     
 }
-button:hover{
+.details-button:hover{
     transform: scale(1.15);
     transition: 350ms;
 }
