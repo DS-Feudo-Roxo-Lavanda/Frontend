@@ -21,10 +21,18 @@ export default function Details(){
                 <Search/> 
             </div>
             <div className="details-wrapper">
-                <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + location.state.poster} className="poster"></img>
-                <h1 className='show-title'>{location.state.title}</h1>
-                <p className='show-title'>{location.state.overview}</p>
-                <p className='show-title'>{location.state.date}</p>
+                <div className='data-wrapper'>
+                    <div>
+                        <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + location.state.poster} className="poster"></img>
+                    </div>
+                    <div>
+                        <h1 className='show-title'>{location.state.title}</h1>
+                        <p className='show-title'>{location.state.overview}</p>
+                        <p className='show-title'>{location.state.date}</p>
+                    </div>
+                    
+                </div>
+               
             </div>
         </div>
     )

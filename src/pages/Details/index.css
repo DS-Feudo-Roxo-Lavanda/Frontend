@@ -8,11 +8,21 @@
 }
 .details-wrapper{
     background-color: #181818;
+    align-items: center;
+    justify-content: center;
+    
+}
+.data-wrapper{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 200px;
+    margin-left: 240px;
+    width: 1000px;
 }
 .poster{
-    margin-top: 100px;
-    margin-left: 250px;
+    margin-right: 30px;
 }
 .show-title{
     color: white;
+    padding: 20px;
 }
