@@ -20,20 +20,20 @@ export default function Details(){
                 <img src={logo} className='logo-header'></img>
                 <Search/> 
             </div>
-            <div className="details-wrapper">
-                <div className='data-wrapper'>
-                    <div>
-                        <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + location.state.poster} className="poster"></img>
-                    </div>
-                    <div>
-                        <h1 className='show-title'>{location.state.title}</h1>
-                        <p className='show-title'>{location.state.overview}</p>
-                        <p className='show-title'>{location.state.date}</p>
-                    </div>
-                    
-                </div>
-               
+            <div className="details-wrapper" style={{backgroundImage: `url(${'https://image.tmdb.org/t/p/w220_and_h330_face'+location.state.poster})`}}>
             </div>
+            <div className='data-wrapper'>
+                <div>
+                    <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + location.state.poster} className="poster"></img>
+                </div>
+                <div>
+                    <h1 className='show-title'>{location.state.title}</h1>
+                    <p className='show-title'>{location.state.overview}</p>
+                    <p className='show-title'>{location.state.date}</p>
+                </div>
+                
+            </div>
+            
         </div>
     )
 }
