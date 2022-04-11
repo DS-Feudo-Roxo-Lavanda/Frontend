@@ -6,6 +6,10 @@ import logo from "../../assets/image/logo.png"
 import styles from "./index.css"
 import Navbar from '../../components/Sidebar/Navbar';
 import { IoStarSharp } from 'react-icons/io5'
+import {AiOutlinePlus, AiOutlineEye} from 'react-icons/ai'
+import {MdOutlineDone} from 'react-icons/md'
+import {FcLike} from 'react-icons/fc'
+import {HiOutlineEye} from 'react-icons/hi'
 
 
 
@@ -36,10 +40,10 @@ export default function Details(){
                             <p className='text'>Data de lançamento: {location.state.date}</p>
                         </div>
                         <div className='action-buttons'>
-                            <button className='details-button'>B1</button>
-                            <button className='details-button'>B2</button>
-                            <button className='details-button'>B3</button>
-                            <button className='details-button'>B4</button>
+                            <button className='details-button'><AiOutlinePlus/></button>
+                            <button className='details-button'><MdOutlineDone/></button>
+                            <button className='details-button'><FcLike/></button>
+                            <button className='details-button'><AiOutlineEye/></button>
                         </div>
                     </div>
                 </div>
