@@ -45,7 +45,7 @@ button{
 	height: 40px;
 	cursor: pointer;
 	background-color: transparent;
-    border: solid 1px white;
+    border: solid 2px white;
 	border-radius: 50%;
     margin-right: 50px;
     
@@ -54,7 +54,6 @@ button:hover{
     transform: scale(1.15);
     transition: 350ms;
 }
-
 .text{
     color: white;
     padding-bottom: 20px;
