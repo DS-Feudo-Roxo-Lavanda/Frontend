@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Search from "../../components/Search/Search";
 import logo from "../../assets/image/logo.png"
 import styles from "./index.css"
-import Navbar from '../../components/Sidebar/Navbar';
 import { IoStarSharp } from 'react-icons/io5'
 import {AiOutlinePlus, AiOutlineEye} from 'react-icons/ai'
 import {MdOutlineDone} from 'react-icons/md'
 import {FcLike} from 'react-icons/fc'
+import {BiArrowBack} from 'react-icons/bi' 
 
 
 
@@ -20,8 +20,9 @@ export default function Details(){
     }) 
     return(
         <div className='details'>
+            
             <div className="shows-header">
-                <Navbar/>
+                <Link to='/Home' className='return'><BiArrowBack/></Link>
                 <img src={logo} className='logo-header'></img>
                 <Search/> 
             </div>
