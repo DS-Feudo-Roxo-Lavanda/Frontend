@@ -19,11 +19,7 @@ export default function Series() {
             <div className="shows-wrapper">
             <Showsbar />
                 <div className='gen-recommendations'>
-                    <h2 className="gen-tittle">Assistindo</h2>
-                        <div className="carousel-wrapper">
-                            <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/tv?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&without_genres=28&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0'/>
-                        </div>
-                    <h2 className="gen-tittle">Não iniciadas</h2>
+                    <h2 className="gen-tittle">Minha lista</h2>
                         <div className="carousel-wrapper">
                             <Carousel className="home_carousel" url='https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=16&with_watch_monetization_types=flatrate'/>
                         </div>
