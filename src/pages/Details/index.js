@@ -9,7 +9,7 @@ import { IoStarSharp } from 'react-icons/io5'
 import {AiOutlinePlus, AiOutlineEye} from 'react-icons/ai'
 import {MdOutlineDone} from 'react-icons/md'
 import {FcLike} from 'react-icons/fc'
-import {HiOutlineEye} from 'react-icons/hi'
+
 
 
 
@@ -43,7 +43,6 @@ export default function Details(){
                             <button className='details-button'><AiOutlinePlus/></button>
                             <button className='details-button'><MdOutlineDone/></button>
                             <button className='details-button'><FcLike/></button>
-                            <button className='details-button'><AiOutlineEye/></button>
                         </div>
                     </div>
                 </div>
