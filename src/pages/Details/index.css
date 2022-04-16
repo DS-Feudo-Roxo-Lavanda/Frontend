@@ -61,3 +61,11 @@
     color: white;
     padding-bottom: 20px;
 }
+.return{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 23px;
+    padding-bottom: 5px;
+}
