@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Search from "../../components/Search/Search";
 import logo from "../../assets/image/logo.png"
 import styles from "./index.css"
@@ -13,6 +13,7 @@ import {BiArrowBack} from 'react-icons/bi'
 
 
 export default function Details(){
+    const navigate = useNavigate()
     const location = useLocation();
     useEffect(() => {
         console.log(location)
@@ -40,7 +41,11 @@ export default function Details(){
         <div className='details'>
             
             <div className="shows-header">
-                <Link to='/Home' className='return'><BiArrowBack/></Link>
+                <div className="return-wrapper">
+                    <button className='return' onClick={() => {
+                        navigate(-1);
+                    }} ><BiArrowBack/></button>
+                </div>
                 <img src={logo} className='logo-header'></img>
                 <Search/> 
             </div>

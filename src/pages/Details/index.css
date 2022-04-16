@@ -71,4 +71,14 @@
     align-items: center;
     padding-left: 23px;
     padding-bottom: 5px;
+    color: #8E05C2;
+    background-color: #202020;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+}
+.return-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
