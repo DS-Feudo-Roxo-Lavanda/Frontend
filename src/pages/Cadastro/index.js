@@ -35,7 +35,7 @@ export default function Cadastro() {
                 const response = await instance.post('/cadastro', data);
 
                 if(response.status === 200){
-                    window.location.href='/home'
+                    window.location.href='/'
                 }else{
                     alert('Erro ao cadastrar')
                 }
