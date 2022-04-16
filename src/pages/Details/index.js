@@ -20,16 +20,19 @@ export default function Details(){
 
     function addToFavs(){
         const fav = instance.post(`/${location.state.type}/${location.state.id}/atualizar/favorito`)
+        alert('Adicionado aos seus favoritos')
         console.log(location.state.type, location.state.id, fav)
     }
 
     function addToList(){
         const list = instance.post(`/${location.state.type}/${location.state.id}/atualizar/nao_assistido`)
+        alert('Adicionado a sua lista')
         console.log(location.state.type, location.state.id, list)
     }
     
     function addToWatched(){
         const watched = instance.post(`/${location.state.type}/${location.state.id}/atualizar/assistido`)
+        alert('Adicionado a sua lista')
         console.log(location.state.type, location.state.id, watched)
     }
 
@@ -53,7 +56,7 @@ export default function Details(){
                     <div className='data-buttons'>
                         <div>
                             <p className='text'>Avaliação: {location.state.vote}/10  <IoStarSharp/></p>
-                            <p className='text'>Data de lançamento: {location.state.type}</p>
+                            <p className='text'>Data de lançamento: {location.state.date}</p>
                         </div>
                         <div className='action-buttons'>
                             <button className='details-button' onClick={addToList}><AiOutlinePlus/></button>

@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
-    
 }
 .data-wrapper{
     background-color: rgba(18, 18, 18, 0.8) ;
@@ -56,6 +55,10 @@
 .details-button:hover{
     transform: scale(1.15);
     transition: 350ms;
+}
+.details-button:active{
+    transform: scale(1.0);
+    transition: 0ms;
 }
 .text{
     color: white;

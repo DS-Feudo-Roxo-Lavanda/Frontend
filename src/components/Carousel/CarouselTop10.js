@@ -39,7 +39,7 @@ export default function Carousel(props){
                     return;
                 }
                 return(
-                    <div className="top10-show" key={id} onClick={() => navigate('/Details', {state: {id: id, title: title, poster: poster_path, overview: overview, date: release_date, vote: vote_average, type: media_type}})}>
+                    <div className="top10-show" key={id} onClick={() => navigate('/Details', {state: {id: id, title: title, poster: poster_path, overview: overview, date: release_date, vote: vote_average, type: props.type}})}>
                         <img ></img>
                         <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + poster_path} className="image" ></img>    
                     </div>
