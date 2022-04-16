@@ -19,10 +19,11 @@ export default function Login() {
                 const response = await instance.post('/login', data);
 
                 
-                if(response.status == 200){
-                    console.log(response)
+                if(response.data.status == 200){
+                    window.location.href='/home'
                 }else{
                     alert('Erro ao logar!')
+                    console.log(response.data.message, response.data.status)
                 }
             }else{
                 alert('Por favor, preencha todos os campos!')
