@@ -15,11 +15,12 @@ export default function Login() {
             password: password
         }
             
-            if (email != '' && password != ''){
+            if (email !='' && password !=''){
                 const response = await instance.post('/login', data);
 
+                
                 if(response.status == 200){
-                    window.location.href='/home'
+                    console.log(response)
                 }else{
                     alert('Erro ao logar!')
                 }

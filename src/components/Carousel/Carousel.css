@@ -49,13 +49,6 @@
     border-radius: 16px;
     height: 100%;
 }
-.tittle{
-    text-align: left;
-    font-size: 16px;
-    color: white;
-    bottom: 25px;
-    left: 10px;
-}
 .img-tittle{
     display: inline-block;
     position: relative;
@@ -69,16 +62,6 @@
 .show:hover{
     transform: scale(1.16,1.16);
     transition: 750ms;
-}
-.tittle-wrapper{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding-left: 13px;
-    padding-bottom: 18px;
-    /*background-image: linear-gradient(To top, rgba(0,0,0,1), rgba(0,0,0, .7), rgba(0,0,0,0));*/
-    /*background-image: linear-gradient(to top, black, transparent);*/
 }
 .buttons-wrapper{
     justify-content: space-between;

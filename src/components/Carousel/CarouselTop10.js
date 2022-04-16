@@ -35,13 +35,13 @@ export default function Carousel(props){
             <div className='top10-carousel' ref={carousel}>
             {data.map((show) => {
                 const {id, title, poster_path, overview, release_date, vote_average } = show;
+                if(!poster_path){
+                    return;
+                }
                 return(
                     <div className="top10-show" key={id} onClick={() => navigate('/Details', {state: {id: id, title: title, poster: poster_path, overview: overview, date: release_date, vote: vote_average}})}>
                         <img ></img>
                         <img src={'https://image.tmdb.org/t/p/w220_and_h330_face' + poster_path} className="image" ></img>    
-                        <div className='tittle-wrapper' >
-                            <span className="tittle">{title}</span>
-                        </div>
                     </div>
                 );
             })}

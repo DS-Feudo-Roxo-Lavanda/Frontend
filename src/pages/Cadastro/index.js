@@ -10,7 +10,6 @@ export default function Cadastro() {
     const[email, setEmail]= useState([])
     const[password, setPassword]= useState([])
 
-
     {/*useEffect(()=>{
         instance.post('/cadastro',{
             email: email,
@@ -34,7 +33,7 @@ export default function Cadastro() {
             if (username != '' && email != '' && password != ''){
                 const response = await instance.post('/cadastro', data);
 
-                if(response.status === 200){
+                if(response.status == 200){
                     window.location.href='/'
                 }else{
                     alert('Erro ao cadastrar')
@@ -42,9 +41,6 @@ export default function Cadastro() {
             }else{
                 alert('Por favor, preencha todos os campos!')
             }
-           
-
-            console.log(data)
     }
 
     
