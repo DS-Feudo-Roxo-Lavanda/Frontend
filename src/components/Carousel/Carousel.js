@@ -12,17 +12,17 @@ export default function Carousel({
   const [data, setData] = useState([]);
   const carousel = useRef(null);
 
-  useEffect(() => {
+  const getValues = () => {
     fetch(url)
       .then((Response) => Response.json())
       .then((Response) => {
         setData(Response[keyResponse]);
       });
-    
-      return () => {
-        carousel.current = false;
-    }
-  }, []);
+  }
+
+  useEffect(() => {
+    getValues();
+  });
 
   const handleRightClick = (e) => {
     e.preventDefault();
