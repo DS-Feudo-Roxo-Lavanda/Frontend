@@ -55,10 +55,11 @@
     margin-top: 10px;
 }
 .line a{
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 8px;
     cursor: default;
     padding: 10px;
+    font-weight: 1;
 }
 .exit a{
     margin-top: 570px;
