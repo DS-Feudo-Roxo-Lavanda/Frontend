@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Carousel.css";
 import sliderArrow from "../../assets/image/sliderArrow.png";
+import { MdOutlineScreenSearchDesktop } from 'react-icons/md'
 
 export default function Carousel({
   url,
@@ -100,7 +102,9 @@ export default function Carousel({
         </>
       ) : (
         <div className="no-data">
-          <p>Não há Dados</p>
+          <p>Você ainda não possui nenhum show adicionado.</p>
+          <MdOutlineScreenSearchDesktop className="discover-icon"></MdOutlineScreenSearchDesktop>
+          <Link to='/Home' className="link-discover"> Explorar </Link>
         </div>
       )}
     </div>

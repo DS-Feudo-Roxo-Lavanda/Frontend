@@ -87,14 +87,30 @@
 
 .no-data {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 400px;
-}
-
-.no-data p {
-    font-size: 16px;
     color: #AAA;
-    font-weight: 700
+    font-size: 16px;
+   
+}
+.no-data p {
+    text-align: center;
+    /*width:270px;*/
+    
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 12px;
+}
+.discover-icon{
+    font-size: 7rem;
+}
+.link-discover{
+    color: #AAA;
+    text-decoration: none;
+}
+.link-discover:hover{
+    color: #700B97;
 }

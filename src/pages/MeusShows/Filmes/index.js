@@ -24,7 +24,7 @@ export default function Filmes() {
             <Carousel
               className="home_carousel"
               url={`https://backend-feudo-roxo.herokuapp.com/meus-shows/filmes?user_id=${user_id}`}
-              keyResponse="assistidos"
+              keyResponse="nao_assistidos"
             />
           </div>
           <h2 className="gen-tittle">Assistidos</h2>
@@ -32,7 +32,7 @@ export default function Filmes() {
             <Carousel
               className="home_carousel"
               url={`https://backend-feudo-roxo.herokuapp.com/meus-shows/filmes?user_id=${user_id}`}
-              keyResponse="nao_assistidos"
+              keyResponse="assistidos"
             />
           </div>
         </div>
