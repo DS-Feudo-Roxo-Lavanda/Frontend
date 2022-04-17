@@ -11,7 +11,7 @@ export default function Search() {
     clearTimeout(timer);
     timer = setTimeout(() => {
       func();
-    }, 1000);
+    }, 750);
   };
 
   const handleInputChange = (e) => {
