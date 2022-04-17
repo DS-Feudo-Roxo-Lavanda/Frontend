@@ -33,7 +33,7 @@ export default function Login() {
     return (
         <div className='login-cadastro'>
             <div className='logo-wrapper'>
-                <img src={logo} className='logo'></img>
+                <img alt="" src={logo} className='logo'></img>
             </div>
             <div className="input-wrapper">
                 <div className="action-wrapper">

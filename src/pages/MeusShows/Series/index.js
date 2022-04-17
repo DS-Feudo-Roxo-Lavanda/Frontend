@@ -1,5 +1,5 @@
-import react from "react";
-import styles from ".././index.css";
+import React from "react";
+import ".././index.css";
 import logo from "../../../assets/image/logo.png";
 import Navbar from "../../../components/Sidebar/Navbar";
 import Carousel from "../../../components/Carousel/Carousel";
@@ -13,7 +13,7 @@ export default function Series() {
     <div className="shows">
       <div className="shows-header">
         <Navbar />
-        <img src={logo} className="logo-header"></img>
+        <img alt="" src={logo} className="logo-header"></img>
         <Search />
       </div>
       <div className="shows-wrapper">

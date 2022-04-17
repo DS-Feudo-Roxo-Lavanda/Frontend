@@ -1,6 +1,6 @@
-import react from "react";
+import React from "react";
 import { useState } from "react";
-import styles from "./Search.css";
+import "./Search.css";
 import SearchResults from "./SearchResults";
 
 export default function Search() {
@@ -15,7 +15,6 @@ export default function Search() {
   };
 
   const handleInputChange = (e) => {
-    console.log(e);
     e.preventDefault();
     const { value } = e.target;
 

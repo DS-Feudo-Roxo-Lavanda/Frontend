@@ -1,4 +1,3 @@
-import react from "react";
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Carousel.css";
@@ -42,7 +41,7 @@ export default function Carousel(props) {
             vote_average,
           } = show;
           if (!poster_path) {
-            return;
+            return '';
           }
           return (
             <div
@@ -63,8 +62,9 @@ export default function Carousel(props) {
                 })
               }
             >
-              <img></img>
+              <img alt=""></img>
               <img
+                alt=""
                 src={
                   "https://image.tmdb.org/t/p/w220_and_h330_face" + poster_path
                 }

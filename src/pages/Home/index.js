@@ -1,5 +1,5 @@
-import react from "react";
-import styles from "./index.css";
+import React from "react";
+import "./index.css";
 import logo from "../../assets/image/logo.png";
 import Navbar from "../../components/Sidebar/Navbar";
 import CarouselTop10 from "../../components/Carousel/CarouselTop10";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="home">
       <div className="home-header">
         <Navbar />
-        <img src={logo} className="logo-header"></img>
+        <img alt="" src={logo} className="logo-header"></img>
         <Search />
       </div>
       <div className="home-wrapper">

@@ -100,7 +100,7 @@ export default function Details() {
         <Link to="/Home" className="return">
           <BiArrowBack />
         </Link>
-        <img src={logo} className="logo-header"></img>
+        <img alt="" src={logo} className="logo-header"></img>
         <Search />
       </div>
       <div
@@ -115,6 +115,7 @@ export default function Details() {
       <div className="data-wrapper">
         <div>
           <img
+            alt=""
             src={
               "https://image.tmdb.org/t/p/w220_and_h330_face" +
               location.state.poster

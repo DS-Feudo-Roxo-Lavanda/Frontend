@@ -10,20 +10,6 @@ export default function Cadastro() {
     const[email, setEmail]= useState([])
     const[password, setPassword]= useState([])
 
-    // useEffect(()=>{
-    //     instance.post('/cadastro',{
-    //         email: email,
-    //         username: username,
-    //         password: password
-    //     })
-    //     .then(function(response){
-    //         console.log(response);
-    //     })
-    //     .catch(function(error){
-    //         console.error(error);
-    //     })
-    // },[])
-
     async function handleSubmit(){
         const data = {
             username: username,
@@ -31,7 +17,7 @@ export default function Cadastro() {
             password: password
         }
             
-            if (username != '' && email != '' && password != ''){
+            if (username !== '' && email !== '' && password !== ''){
                 const response = await instance.post('/cadastro', data);
                 if(response.status === 200){
                     navigate('/Home');
@@ -47,7 +33,7 @@ export default function Cadastro() {
     return(
         <div className="login-cadastro">
             <div className="logo-wrapper">
-                <img src={logo} className="logo"></img>
+                <img alt="" src={logo} className="logo"></img>
             </div>
             <div className="input-wrapper">
                 <div className="action-wrapper">

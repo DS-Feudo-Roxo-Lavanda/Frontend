@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SearchResults = ({ results }) => {
   const navigate = useNavigate();
@@ -18,10 +18,8 @@ const SearchResults = ({ results }) => {
       } = show;
 
       if (!title) {
-        return;
+        return '';
       }
-
-      console.log(show);
 
       return (
         <li

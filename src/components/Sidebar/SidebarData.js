@@ -1,6 +1,4 @@
-import react from "react";
-import { icons } from "react-icons";
-import { FaBars } from "react-icons/fa"
+import React from "react";
 import { AiOutlineHome } from "react-icons/ai"
 import { BiBookBookmark } from "react-icons/bi"
 import { BiExit } from "react-icons/bi"

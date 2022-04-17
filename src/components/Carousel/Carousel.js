@@ -55,7 +55,7 @@ export default function Carousel({
                 vote_average,
               } = show;
               if (!poster_path) {
-                return;
+                return '';
               }
               return (
                 <div
@@ -77,6 +77,7 @@ export default function Carousel({
                   }
                 >
                   <img
+                    alt=""
                     src={
                       "https://image.tmdb.org/t/p/w220_and_h330_face" +
                       poster_path
