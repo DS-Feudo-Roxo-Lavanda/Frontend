@@ -1,45 +1,45 @@
-import React,{useEffect,useState} from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/image/logo.png"
 import instance from "../../services/instance";
 
 
 export default function Cadastro() {
-
+    const navigate = useNavigate();
     const[username, setUsername]= useState([])
     const[email, setEmail]= useState([])
     const[password, setPassword]= useState([])
 
-    {/*useEffect(()=>{
-        instance.post('/cadastro',{
-            email: email,
-            username: username,
-            password: password
-        })
-        .then(function(response){
-            console.log(response);
-        })
-        .catch(function(error){
-            console.error(error);
-        })
-    },[])*/}
+    // useEffect(()=>{
+    //     instance.post('/cadastro',{
+    //         email: email,
+    //         username: username,
+    //         password: password
+    //     })
+    //     .then(function(response){
+    //         console.log(response);
+    //     })
+    //     .catch(function(error){
+    //         console.error(error);
+    //     })
+    // },[])
 
     async function handleSubmit(){
         const data = {
             username: username,
             email: email,
-            password: password}
+            password: password
+        }
             
             if (username != '' && email != '' && password != ''){
                 const response = await instance.post('/cadastro', data);
-
-                if(response.status == 200){
-                    window.location.href='/'
+                if(response.status === 200){
+                    navigate('/Home');
                 }else{
-                    alert('Erro ao cadastrar')
+                    alert('Erro ao cadastrar');
                 }
             }else{
-                alert('Por favor, preencha todos os campos!')
+                alert('Por favor, preencha todos os campos!');
             }
     }
 

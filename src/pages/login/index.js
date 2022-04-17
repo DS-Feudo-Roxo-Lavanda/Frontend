@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import logo from '../../assets/image/logo.png'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import instance from "../../services/instance";
 
 
 export default function Login() {
+    const navigate = useNavigate();
 
     const[email, setEmail]= useState([])
     const[password, setPassword]= useState([])
@@ -15,18 +16,18 @@ export default function Login() {
             password: password
         }
             
-            if (email !='' && password !=''){
-                const response = await instance.post('/login', data);
+        if (email !== '' && password !== ''){
+            const response = await instance.post('/login', data);
 
-                
-                if(response.status == 200){
-                    console.log(response)
-                }else{
-                    alert('Erro ao logar!')
-                }
+            if(response.status === 200){
+                localStorage.setItem('@userId', response.data.user._id);
+                navigate('/Home');
             }else{
-                alert('Por favor, preencha todos os campos!')
+                alert('Erro ao logar!')
             }
+        }else{
+            alert('Por favor, preencha todos os campos!')
+        }
         }
     
     return (
