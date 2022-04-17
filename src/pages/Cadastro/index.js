@@ -1,6 +1,5 @@
 import React,{useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/image/logo.png"
 import instance from "../../services/instance";
 
 
@@ -32,9 +31,6 @@ export default function Cadastro() {
     
     return(
         <div className="login-cadastro">
-            <div className="logo-wrapper">
-                <img alt="" src={logo} className="logo"></img>
-            </div>
             <div className="input-wrapper">
                 <div className="action-wrapper">
                     <p className="title-login">Crie sua conta.</p>
