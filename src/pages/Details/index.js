@@ -130,11 +130,12 @@ export default function Details() {
           <h1 className="text">{location.state.title}</h1>
           <p className="text">{location.state.overview}</p>
           <div className="data-buttons">
-            <div>
+            <div className="text-wrapper">
               <p className="text">
                 Avaliação: {location.state.vote}/10 <IoStarSharp />
               </p>
               <p className="text">Data de lançamento: {currentDate}</p>
+              <a href={'https://www.youtube.com/results?search_query='+location.state.title+' trailer'} target="_blank" className="text trailer">Assista ao trailer</a>
             </div>
             <div className="action-buttons">
               <button onClick={() => handleMyList()} className="details-button">

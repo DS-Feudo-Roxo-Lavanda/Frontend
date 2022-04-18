@@ -57,10 +57,19 @@
     transform: scale(1.15);
     transition: 350ms;
 }
+.text-wrapper{
+    padding-bottom: 13px;
+}
 .text{
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    text-decoration: none;
 }
+.trailer:hover{
+   color: #BA0000 ;
+   transition: 350ms;
+}
+
 .return{
     font-size: 35px;
     display: flex;
