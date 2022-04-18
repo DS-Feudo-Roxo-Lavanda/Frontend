@@ -14,6 +14,9 @@ export default function Series() {
       <div className="shows-header">
         <Navbar />
         <img alt="" src={logo} className="logo-header"></img>
+        <div className='logo'>
+        <p className="baroko">Baroko</p>
+        </div>
         <Search />
       </div>
       <div className="shows-wrapper">

@@ -11,7 +11,10 @@ export default function Home() {
     <div className="home">
       <div className="home-header">
         <Navbar />
-        <img alt="" src={logo} className="logo-header"></img>
+        <img alt="" src={logo} className="logo-header" ></img>
+        <div className='logo'>
+        <p className="baroko">Baroko</p>
+        </div>
         <Search />
       </div>
       <h2 className="gen-tittle first-tittle">Em alta</h2>

@@ -101,6 +101,9 @@ export default function Details() {
           <BiArrowBack />
         </Link>
         <img alt="" src={logo} className="logo-header"></img>
+        <div className='logo'>
+        <p className="baroko">Baroko</p>
+        </div>
         <Search />
       </div>
       <div

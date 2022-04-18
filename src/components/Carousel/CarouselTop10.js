@@ -43,6 +43,9 @@ export default function Carousel(props) {
           if (!poster_path) {
             return '';
           }
+          if (id == 919689){
+            return '';
+          }
           return (
             <div
               className="top10-show"

@@ -17,7 +17,19 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baroko{
+    color: white;
+    font-weight:500;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .logo-header{
     height: 30px;
