@@ -5,8 +5,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px 10px 20px;
+    justify-content: center;
 }
 .show-button{
     justify-content: center;
@@ -15,15 +14,18 @@
     color: white;
     background-color: #202020;
     height: 60px;
-    padding: 0px 200px 0px 200px;
+    width: 465px;
+    margin: 18px;
     cursor: pointer;
     border: none;
     border-radius: 8px;
 }
 .show-button:hover{
     background-color: #3E065F;
-    margin-bottom: 15px;
     transition: 350ms;
+    margin-bottom: 43px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 .shows-nav-text a{
     text-decoration: none;
