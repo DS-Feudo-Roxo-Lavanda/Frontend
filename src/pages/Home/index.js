@@ -23,14 +23,7 @@ export default function Home() {
           <CarouselTop10 url="https://api.themoviedb.org/3/discover/movie?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28&with_watch_monetization_types=flatrate" />
         </div>
         <div className="gen-recommendations">
-          <h2 className="gen-tittle">Séries</h2>
-          <div className="carousel-wrapper">
-            <Carousel
-              className="home_carousel"
-              url="https://api.themoviedb.org/3/discover/tv?api_key=5914e1c087d0360b477c8b0ceee77bff&language=pt-BR&sort_by=popularity.desc&page=1&timezone=America%2FSao_Paulo&include_null_first_air_dates=false&with_watch_providers=BR%2CUS&watch_region=BR&with_watch_monetization_types=flatrate&with_status=3&with_type=2"
-              isMovie={false}
-            />
-          </div>
+         
           <h2 className="gen-tittle">Animações</h2>
           <div className="carousel-wrapper">
             <Carousel
