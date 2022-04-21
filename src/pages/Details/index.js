@@ -13,8 +13,10 @@ import api from "../../services/instance";
 export default function Details() {
   const location = useLocation();
   const navigate = useNavigate();
-  const currentDate = new Date(location.state.date).toLocaleString('pt-BR').split(" ")[0];
+  var currentDate = location.state.isMovie ?  new Date(location.state.date).toLocaleString('pt-BR').split(" ")[0] :  new Date(location.state.serie_date).toLocaleString('pt-BR').split(" ")[0];
 
+ 
+  
   useEffect(() => {
     console.log(location.state);
   }, []);
@@ -94,6 +96,8 @@ export default function Details() {
     }
   };
 
+  var namesearch = location.state.isMovie ? location.state.title : location.state.name ; 
+
   return (
     <div className="details">
       <div className="shows-header">
@@ -127,7 +131,7 @@ export default function Details() {
           ></img>
         </div>
         <div>
-          <h1 className="text">{location.state.title}</h1>
+          <h1 className="text">{location.state.title}{location.state.name}</h1>
           <p className="text">{location.state.overview}</p>
           <div className="data-buttons">
             <div className="text-wrapper">
@@ -135,7 +139,7 @@ export default function Details() {
                 Avaliação: {location.state.vote}/10 <IoStarSharp />
               </p>
               <p className="text">Data de lançamento: {currentDate}</p>
-              <a href={'https://www.youtube.com/results?search_query='+location.state.title+' trailer'} target="_blank" className="text trailer">Assista ao trailer</a>
+              <a href={'https://www.youtube.com/results?search_query='+ namesearch +' Trailer'} target="_blank" className="text trailer">Assista ao trailer</a>
             </div>
             <div className="action-buttons">
               <button onClick={() => handleMyList()} className="details-button">

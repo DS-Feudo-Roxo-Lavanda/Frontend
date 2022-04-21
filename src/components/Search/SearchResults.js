@@ -9,17 +9,17 @@ const SearchResults = ({ results }) => {
   const showList = results.map((show) => {
       const {
         id,
+        name,
         title,
         poster_path,
         overview,
         release_date,
+        first_air_date,
         vote_average,
         media_type,
       } = show;
 
-      if (!title) {
-        return '';
-      }
+      
 
       return (
         <li
@@ -28,10 +28,12 @@ const SearchResults = ({ results }) => {
             navigate("/Details", {
               state: {
                 id: id,
+                name: name,
                 title: title,
                 poster: poster_path,
                 overview: overview,
                 date: release_date,
+                serie_date: first_air_date,
                 vote: vote_average,
                 isMovie: media_type === "movie",
                 show,
@@ -39,7 +41,7 @@ const SearchResults = ({ results }) => {
             })
           }}
         >
-          {title}
+          {title}{name}
         </li>
       );
     }
