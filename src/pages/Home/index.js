@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
 import logo from "../../assets/image/logo.png";
-import Navbar from "../../components/Sidebar/Navbar";
-import CarouselTop10 from "../../components/Carousel/CarouselTop10";
-import Carousel from "../../components/Carousel/Carousel";
-import Search from "../../components/Search/Search";
+import Navbar from "../../Components/Sidebar/Navbar"
+import CarouselTop10 from "../../Components/Carousel/CarouselTop10"
+import Carousel from "../../Components/Carousel/Carousel";
+import Search from "../../Components/Search/Search";
 
 export default function Home() {
   return (

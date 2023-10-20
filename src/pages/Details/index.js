@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Search from "../../components/Search/Search";
+import Search from "../../Components/Search/Search";
 import logo from "../../assets/image/logo.png";
 import "./index.css";
 import { IoStarSharp } from "react-icons/io5";

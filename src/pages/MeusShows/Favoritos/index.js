@@ -1,10 +1,10 @@
 import React from "react";
 import ".././index.css";
 import logo from "../../../assets/image/logo.png";
-import Navbar from "../../../components/Sidebar/Navbar";
-import Carousel from "../../../components/Carousel/Carousel";
-import Search from "../../../components/Search/Search";
-import Showsbar from "../../../components/Showsbar/Showsbar";
+import Navbar from "../../../Components/Sidebar/Navbar";
+import Carousel from "../../../Components/Carousel/Carousel";
+import Search from "../../../Components/Search/Search";
+import Showsbar from "../../../Components/Showsbar/Showsbar"
 
 export default function Favoritos() {
   const user_id = localStorage.getItem('@userId');
